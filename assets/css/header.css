@@ -55,7 +55,6 @@ header nav.menu-right{
   float: right;
 }
 header .logo{
-  float: left;
 }
 header nav > ul{
   display: block;
@@ -112,7 +111,8 @@ header nav li:first-child a{
   padding-left: 0;
 }
 header nav li:last-child a{
-  padding-right: 0;
+  padding: 10px;
+  margin: 18px;
 }
 header nav a:hover,
 header nav a.active
@@ -132,7 +132,8 @@ header .logo img{
   -ms-transition: all 0.27s ease;
   -o-transition: all 0.27s ease;
   transition: all 0.27s ease;
-  max-width: 100%;
+  max-width: 20%;
+  float: left;
 }
 /*Mobile*/
 @media screen and (max-width:550px){

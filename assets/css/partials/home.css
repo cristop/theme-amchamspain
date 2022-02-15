@@ -1,8 +1,92 @@
-.home-spot{
-	background-position: left bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
+section#home-principal {
+  padding-top: 165px;
+  padding-bottom: 50px;
+  position: relative;
 }
-.home-spot .container{
-	height: 100vh;
+section#home-principal .container {
+}
+section#home-principal .sup_titulo {
+  font-size: 0.7rem;
+  padding-bottom: 10px;
+  text-align: left;
+}
+section#home-principal .sup_titulo a {
+	color: #000;
+}
+section#home-principal .title {
+  font-weight: 600;
+  padding-bottom: 21px;
+  text-align: left;
+}
+section#home-principal .title::after {
+  content: "";
+  display: block;
+  width: 1184px;
+  height: 3px;
+  background: #000000;
+}
+section#home-principal .sup_text {
+  font-size: 0.7rem;
+  padding-bottom: 28px;
+  text-align: left;
+}
+section#home-principal .text {
+  max-width: 1204px;
+  text-align: left;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 900px) {
+  section#home-principal {
+  }
+  section#home-principal .container {
+  }
+  section#home-principal .sup_titulo {
+  }
+  section#home-principal .title {
+  }
+  section#home-principal .text {
+  }
+}
+
+section#formulario {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+section#formulario .container {
+}
+section#formulario .form {
+}
+section#formulario .form .flex {
+}
+section#formulario .form .flex > div {
+}
+section#formulario .form .flex label {
+  padding-bottom: 10px;
+}
+section#formulario .form .flex input {
+}
+section#formulario .form .flex .btn {background-color: var(--c-primary);}
+section#formulario .form .flex .condiciones {
+}
+@media screen and (max-width: 900px) {
+  section#formulario {
+  }
+  section#formulario .container {
+  }
+  section#formulario .form {
+  }
+  section#formulario .form .flex {
+  }
+  section#formulario .form .flex > div {
+    width: 100%;
+  }
+  section#formulario .form .flex label {
+  }
+  section#formulario .form .flex input {
+  }
+  section#formulario .form .flex .btn {
+  }
+  section#formulario .form .flex .condiciones {
+  }
 }
