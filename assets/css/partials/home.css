@@ -15,9 +15,9 @@ section#home-principal .sup_titulo a {
 }
 section#home-principal .title {
   font-weight: 600;
-  padding-bottom: 4px;
+  padding-bottom: 12px;
   text-align: left;
-  font-size: 45px;
+  font-size: 2rem;
 }
 section#home-principal .title::after {
   content: "";
@@ -25,16 +25,18 @@ section#home-principal .title::after {
   width: 1184px;
   height: 3px;
   background: #000000;
+  margin-top: 17px;
 }
 section#home-principal .sup_text {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   padding-bottom: 28px;
   text-align: left;
 }
 section#home-principal .text {
-  max-width: 1168px;
+  /* max-width: 1168px; */
   text-align: left;
   /* padding-bottom: -126px; */
+  font-size: 0.9rem;
 }
 section#home-principal .form {
   /* padding-bottom: 63px; */

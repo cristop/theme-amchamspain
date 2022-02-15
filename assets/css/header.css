@@ -4,7 +4,7 @@
 header{
   display: block;
   text-align: center;
-  background-color: transparent;
+  background-color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
   position: absolute;
@@ -54,8 +54,7 @@ header nav.menu-main{
 header nav.menu-right{
   float: right;
 }
-header .logo{
-}
+header .logo{display: block;float: left;max-width: initial;max-width: 273px;}
 header nav > ul{
   display: block;
   padding: 0;
@@ -66,6 +65,10 @@ header nav > ul > li{
   padding: 0;
   margin: 0;
   position: relative;
+}
+
+header nav > ul > li img {
+    height: 20px;
 }
 header nav > ul > li > ul{
   position: absolute;
@@ -98,21 +101,22 @@ header nav > ul > li > ul li a{
   white-space: nowrap;
 }
 header nav a{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
   line-height: 50px;
   color: #666666;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 10px;
   font-size: 0.75rem;
   font-weight: 500;
+  display: block;
 }
 header nav li:first-child a{
   padding-left: 0;
 }
 header nav li:last-child a{
   padding: 10px;
-  margin: 18px;
+  margin: 0;
 }
 header nav a:hover,
 header nav a.active
@@ -132,8 +136,8 @@ header .logo img{
   -ms-transition: all 0.27s ease;
   -o-transition: all 0.27s ease;
   transition: all 0.27s ease;
-  max-width: 20%;
-  float: left;
+  /* max-width: 20%; */
+  /* float: left; */
 }
 /*Mobile*/
 @media screen and (max-width:550px){
