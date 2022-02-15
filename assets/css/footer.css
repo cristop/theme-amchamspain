@@ -8,7 +8,7 @@ footer {
 }
 
 footer#info-contacto {
-  padding-top: 50px;
+  padding-top: 56px;
   padding-bottom: 0;
   position: relative;
   background-color: var(--c-primary);
@@ -16,7 +16,7 @@ footer#info-contacto {
 footer#info-contacto .container {
 }
 footer#info-contacto .items-info-contacto {
-  text-align: center;
+  text-align: left;
   color: #fff;
 }
 
@@ -24,25 +24,24 @@ footer#info-contacto .items-info-contacto a {
     color: white;
     font-family: 'Playfair Display', serif;
     text-decoration: none;
+    font-size: 1rem;
 }
 footer#info-contacto .items-info-contacto .item {
 }
-footer#info-contacto .items-info-contacto .item:first-child,
-footer#info-contacto .items-info-contacto .item:last-child{
-  text-align: left;
-}
 footer#info-contacto .items-info-contacto .bg {
-  background-color: 01b06d;
+}
+
+footer#info-contacto .items-info-contacto .bg.menu-footer .texto_flex {
+    padding-bottom: 10px;
 }
 footer#info-contacto .items-info-contacto .icono_flex {
-  padding-bottom: 87px;
   text-align: center;
   display: flex;
 }
 
 .icono_flex {}
 footer#info-contacto .items-info-contacto .icono_flex img {
-  height: 20px;
+  height: 23px;
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
@@ -52,17 +51,28 @@ footer#info-contacto .items-info-contacto .icono_flex ul {
 footer#info-contacto .items-info-contacto .titulo_flex {
   padding-bottom: 10px;
 }
+
+.titulo_flex.title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1;
+}
 footer#info-contacto .items-info-contacto .subtitulo_flex {
   font-size: 0.7rem;
   padding-bottom: 10px;
 }
 footer#info-contacto .items-info-contacto .texto_flex {
-  font-size: 0.7rem;
-  padding-bottom: 10px;
+  padding-bottom: 0;
+}
+footer#info-contacto .items-info-contacto .texto_flex{
+  max-width: 466px;
+  line-height: 1.2;
+  font-size: 0.8rem;
 }
 .copy {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    margin-top: 59px;
 }
 .copy a {
     color: #333333;
@@ -98,3 +108,24 @@ footer#info-contacto .items-info-contacto .texto_flex {
 }
 
 
+
+
+.bg.social {}
+
+.bg.social .title {
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 190px;
+    line-height: 1.2;
+    padding-bottom: 16px;
+}
+
+.bg.social .icono_flex {}
+
+.bg.social .icono_flex > div{}
+
+.bg.social .icono_flex > div a {
+    padding-right: 24px;
+}
+
+.bg.social .icono_flex > div a img {}

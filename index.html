@@ -62,7 +62,7 @@
   </header>
 
   <!-- SECTIONS AQUI -->
-  <section id="home-principal" class="section wow fadeIn  ">
+  <section id="home-principal" class="section">
     <div class="bg-image">
       <picture>
         <source srcset="assets/img/fondo1.webp" type="image/webp">
@@ -72,7 +72,7 @@
     </div>
     <div class="container">
       <div class="flex principal-col">
-        <div class="wow fadeIn">
+        <div>
           <div class="sup_titulo">
             <a href="https://www.amchamspain.com/eventos/">Volver a eventos</a>
           </div>
@@ -83,21 +83,19 @@
             Reunión Privada
           </div>
           <div class="text">
-            Lorem ipsum dolor sit amet. Ea earum velit sit nobis et Quis omnis. Aut tempora nihil sit molestiae quis sit
-            suscipit nemo ad quis numquam. Ut soluta voluptatem hic corporis odit eum dolores voluptas quo eaque galisum
-            et iure incidunt aut doloremque molestias eum quos modi. Non iusto ducimus id sapiente similique non eius
-            soluta.
-            <br><br>
-            Lorem ipsum dolor sit amet. Ea earum velit sit nobis et Quis omnis. Aut tempora nihil sit molestiae quis sit
-            suscipit nemo ad quis numquam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit ornare tellus sed commodo. Morbi
+            placerat est metus, eget luctus velit euismod ac. In vel nulla non purus faucibus porttitor. Donec vel
+            ultricies nisi. Vivamus at consectetur arcu. Vestibulum venenatis erat ac vestibulum tincidunt. <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit ornare tellus sed commodo. Morbi
+            placerat est metus, eget luctus velit euismod ac.
           </div>
           <div class="form">
             <div class="flex">
               <div>
-                <select name="" id="">
+                <select name="perfil" id="perfil">
                   <option value="">Perfil</option>
-                  <option value="#"></option>
-                  <option value="#"></option>
+                  <option value="Socio AmchamSpain">Socio AmchamSpain</option>
+                  <option value="No socio AmchamSpain">No socio AmchamSpain</option>
                 </select>
               </div>
               <div>
@@ -149,9 +147,9 @@
 
   <footer id="info-contacto" class="">
     <div class="container">
-      <div class="items-info-contacto  flex t-col-3">
-        <div class="item">
-          <div class="bg">
+      <div class="items-info-contacto flex">
+        <div class="item w60">
+          <div class="bg menu-footer">
             <div class="texto_flex">
               <a href="https://www.amchamspain.com/contacto/">Contacto</a>
             </div>
@@ -174,9 +172,9 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <div class="bg">
-            <div class="texto_flex ">
+        <div class="item w50">
+          <div class="bg social">
+            <div class="title">
               Siguenos en nuestras redes
             </div>
             <div class="icono_flex">
@@ -225,9 +223,6 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;500;600&display=swap"
     rel="stylesheet">
 
-  <!-- libreria WOW animaciones CSS -->
-  <link href="assets/library/wow/animate-reduce.css" type="text/css" rel="stylesheet" media="screen,projection" async />
-
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/booster.min.css" media="all" async>
   <link rel="stylesheet" href="assets/css/general.css" async>
@@ -239,22 +234,6 @@
   <!-- jQuery -->
   <script src="assets/library/jQuery/jquery-3.3.1.min.js"></script>
   <script src="assets/library/jQuery/jquery.easing.js"></script>
-
-  <script src="assets/library/jquery.cycle2/jquery.cycle2.min.js"></script>
-
-  <script src="assets/library/carrousel/carrousel.js"></script>
-
-  <!-- libreria WOW animaciones JS -->
-  <script src="assets/library/wow/wow.min.js"></script>
-  <script>
-    wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset: 200
-      }
-    );
-    wow.init();
-  </script>
 
   <!-- Main -->
   <script src="assets/js/main.js"></script>

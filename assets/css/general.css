@@ -38,7 +38,7 @@ body {
 
 
 a:hover {
-  color: var(--c-hover);
+  opacity: 0.7;
 }
 
 
@@ -54,18 +54,20 @@ select,
 textarea {
   display: inline-block;
   width: 100%;
-  border: 1px solid #ebebeb;
+  border: 2px solid #999;
   background-color: #fff;
   padding: 0 10px;
-  margin-bottom: 0px;
-  font-size: 0.65rem;
-  height: 34px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  height: 71px;
   outline: none;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   /* Firefox */
   -webkit-box-sizing: border-box;
   /* Safari */
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 input[type="text"]::placeholder,
@@ -76,8 +78,8 @@ input[type="password"]::placeholder,
 input[type="search"]::placeholder,
 select::placeholder,
 textarea::placeholder {
-  opacity: 0.8;
-  color: #666666;
+  opacity: 1;
+  color: #333;
 }
 
 input[type="number"],
@@ -90,12 +92,13 @@ input[type="tel"] {
 
 select {
   vertical-align: middle;
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath fill='%23343a40' d='M12 21l-12-18h24z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px #fff;
+  /* background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath fill='%23343a40' d='M12 21l-12-18h24z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px #fff; */
   /* background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px; */
-  /*background: url("data:image/svg+xml,%3csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='sort-down' class='svg-inline--fa fa-sort-down fa-w-10' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3e%3cpath fill='%23333' d='M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z'%3e%3c/path%3e%3c/svg%3e") no-repeat right .8rem center/10px 12px;*/
-  /* background: url("data:image/svg+xml,%3csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='chevron-down' class='svg-inline--fa fa-chevron-down fa-w-14' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3e%3cpath fill='%23000' d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'%3e%3c/path%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px; */
+  /* background: url("data:image/svg+xml,%3csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='sort-down' class='svg-inline--fa fa-sort-down fa-w-10' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3e%3cpath fill='%23333' d='M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z'%3e%3c/path%3e%3c/svg%3e") no-repeat right .8rem center/10px 12px; */
+  background: url("data:image/svg+xml,%3csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='chevron-down' class='svg-inline--fa fa-chevron-down fa-w-14' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3e%3cpath fill='%23666666' d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'%3e%3c/path%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px #fff;
   background-repeat: no-repeat;
-  background-position: calc(100% + -10px) center;
+  background-position: calc(100% + -25px) center;
+  background-size: auto 30%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -113,7 +116,7 @@ select {
   background-color: #c8c8c8;
   color: #fff;
   -webkit-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 0;
   text-align: center;
 }
 
@@ -135,4 +138,28 @@ select {
   .title {}
 
   .subtitle {}
+
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  select,
+  textarea{
+    height: 60px;
+    margin-bottom: 0;
+}
+}
+
+label.custom-checkbox input[type="checkbox"]+span, label.custom-radio input[type="radio"]+span {
+    border-radius: 0;
+    width: 27px;
+    height: 27px;
+    border: 2px solid #999;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+label.custom-checkbox input[type="checkbox"]:checked+span, label.custom-radio input[type="radio"]:checked+span{
+      background-size: 65%;
 }

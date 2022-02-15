@@ -1,35 +1,36 @@
 section#home-principal {
-  padding-top: 165px;
-  padding-bottom: 50px;
+  padding-top: 169px;
+  padding-bottom: 0px;
   position: relative;
 }
-section#home-principal .container {
-}
+section#home-principal .container {max-width: 1182px;}
 section#home-principal .sup_titulo {
   font-size: 0.7rem;
-  padding-bottom: 10px;
+  padding-bottom: 24px;
   text-align: left;
 }
 section#home-principal .sup_titulo a {
   color: #000;
+  font-size: 0.9rem;
 }
 section#home-principal .title {
   font-weight: 600;
   padding-bottom: 12px;
   text-align: left;
   font-size: 2rem;
+  letter-spacing: -0.2px;
 }
 section#home-principal .title::after {
   content: "";
   display: block;
-  width: 1184px;
+  width: 100%;
   height: 3px;
   background: #000000;
   margin-top: 17px;
 }
 section#home-principal .sup_text {
   font-size: 0.8rem;
-  padding-bottom: 28px;
+  padding-bottom: 21px;
   text-align: left;
 }
 section#home-principal .text {
@@ -37,13 +38,19 @@ section#home-principal .text {
   text-align: left;
   /* padding-bottom: -126px; */
   font-size: 0.9rem;
+  line-height: 1.2;
 }
 section#home-principal .form {
-  /* padding-bottom: 63px; */
-  padding: 60px;
+  padding: 25px 33px;
+  padding-top: 41px;
 }
 section#home-principal .form .flex .btn {
   background-color: var(--c-primary);
+  padding-left: 70px;
+  padding-right: 70px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 section#home-principal .bg-image img {
   display: block;
@@ -61,16 +68,53 @@ section#home-principal .bg-image {
   left: 0;
   top: 0;
   z-index: 0;
+  pointer-events: none;
 }
 @media screen and (max-width: 900px) {
   section#home-principal {
+  padding-top: 110px;
   }
   section#home-principal .container {
   }
   section#home-principal .sup_titulo {
   }
   section#home-principal .title {
+  font-size: 1.3rem;
   }
   section#home-principal .text {
+  font-size: 0.8rem;
   }
+  section#home-principal .form{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section#home-principal .form .flex > div{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section#home-principal .form .flex .btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+
+.condiciones {
+    padding-top: 0;
+    padding-bottom: 19px;
+}
+
+.condiciones label {
+    font-size: 0.9rem;
+    /* padding-left: 17px; */
+}
+
+/*Mobile*/
+@media screen and (max-width:900px){
+	.condiciones{
+		padding-top: 15px;
+	}
+    .condiciones label {
+    }
 }
