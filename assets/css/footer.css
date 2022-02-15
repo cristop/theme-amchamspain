@@ -25,12 +25,12 @@ footer#info-contacto .items-info-contacto .bg {
   background-color: 01b06d;
 }
 footer#info-contacto .items-info-contacto .icono_flex {
-  padding-bottom: 20px;
+  padding-bottom: 87px;
   text-align: center;
   display: flex;
 }
 footer#info-contacto .items-info-contacto .icono_flex img {
-  height: 60px;
+  height: 20px;
   width: auto;
   object-fit: contain;
 }
